@@ -20,7 +20,13 @@ RUN yum -y update && yum -y install \
     patch \
     php-gmp \
     sendmail \
-    which
+    vixie-cron \
+    which 
+
+RUN yum clean all
+RUN yum -y install python2-pip
+RUN pip install PyYAML
+
 WORKDIR /usr/local
 RUN curl https://repo.ucar.edu/artifactory/binary-local/phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2 | tar -jxvf - \
     && ln -s phantomjs-2.1.1-linux-x86_64 phantomjs
