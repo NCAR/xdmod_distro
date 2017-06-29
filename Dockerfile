@@ -20,7 +20,9 @@ RUN yum -y update && yum -y install \
     php-gmp \
     sendmail \
     vixie-cron \
-    which 
+    which \
+    mod_ssl \
+    openssl
 
 RUN yum clean all
 RUN yum -y install python2-pip
