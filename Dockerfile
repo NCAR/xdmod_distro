@@ -1,7 +1,8 @@
 FROM centos:7
 
 ENV REFRESHED_AT 2017-03-20
-LABEL name=xdmod_distro \
+LABEL repo=cisl-repo \
+      name=xdmod_distro \
       version=1.0
 
 ENV XDMOD_MAJOR=5.6 \
