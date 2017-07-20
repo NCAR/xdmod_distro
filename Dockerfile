@@ -1,12 +1,12 @@
 FROM centos:7
 
-ENV REFRESHED_AT 2017-07-12
+ENV REFRESHED_AT 2017-07-20
 LABEL repo=cisl-repo \
       name=xdmod_distro \
-      version=1.1
+      version=1.2
 
-ENV XDMOD_MAJOR=6.0 \
-    XDMOD_VERSION=6.0.0-1.0
+ENV XDMOD_MAJOR=6.5 \
+    XDMOD_VERSION=6.5.0-1.0
 ENV XDMOD_RPM=xdmod-${XDMOD_VERSION}.el7.centos
 
 LABEL edu.ucar.cisl.open-xdmod.version ${XDMOD_VERSION}
